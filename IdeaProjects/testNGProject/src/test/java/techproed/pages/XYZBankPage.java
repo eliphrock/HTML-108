@@ -49,15 +49,47 @@ public class XYZBankPage {
  @FindBy(xpath = "//tbody//td[1]")
  public List<WebElement> numberOfCustomerRows;
 
-
  @FindBy(xpath = "//button[.='Home']")
  public WebElement homeButton;
 
  @FindBy(xpath = "//button[.='Customer Login']")
  public WebElement customerLoginButton;
 
+ @FindBy(id = "userSelect")
+ public WebElement yourNameDropdown;
 
+ @FindBy(xpath = "//button[.='Login']")
+ public WebElement loginButton;
 
+ @FindBy(xpath = "//button[@ng-class='btnClass2']")
+ public WebElement depositButton;
+
+ @FindBy(xpath = "//input[@placeholder='amount']")
+ public WebElement depositAmountInput;
+
+ @FindBy(xpath = "//button[.='Deposit']")
+ public WebElement depositSubmitButton;
+
+ @FindBy(xpath = "//span[.='Deposit Successful']")
+ public WebElement depositSuccessfulMessage;
+
+ @FindBy(xpath = "//button[@ng-class='btnClass3']")
+ public WebElement withdrawalButton;
+
+ @FindBy(xpath = "//input[@placeholder='amount']")
+ public WebElement withdrawalAmountInput;
+
+ @FindBy(xpath = "//button[.='Withdraw']")
+ public WebElement withdrawSubmitButton;
+
+ @FindBy(xpath = "//span[@ng-show='message']")
+ public WebElement transactionSuccessfulMessage;
+
+ @FindBy(xpath = "//button[.='Logout']")
+ public WebElement logOutButton;
+
+ @FindBy(xpath = "//button[.='Delete']")
+ public List<WebElement> deleteButtonList;
 
 
 
