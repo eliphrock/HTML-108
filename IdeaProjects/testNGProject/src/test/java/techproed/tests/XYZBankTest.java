@@ -137,5 +137,7 @@ public class XYZBankTest {
 //        Assert that number of customers is 0
         assertEquals(0, xyzBankPage.deleteButtonList.size());
 
+
+        Driver.closeDriver();
     }
 }
